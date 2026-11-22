@@ -1,0 +1,22 @@
+﻿export const words = [
+    "able", "about", "above", "add", "after", "again", "air", "all", "also", "and",
+    "any", "are", "area", "arm", "ask", "back", "bad", "ball", "band", "base",
+    "bed", "best", "big", "bird", "blue", "boat", "body", "book", "both", "box",
+    "boy", "call", "can", "car", "care", "cat", "city", "cold", "come", "cool",
+    "day", "dog", "door", "down", "draw", "each", "ear", "east", "easy", "eat",
+    "end", "even", "ever", "eye", "face", "fact", "fall", "far", "fast", "few",
+    "find", "fire", "fish", "five", "food", "foot", "form", "four", "free", "from",
+    "game", "get", "girl", "give", "good", "got", "green", "hand", "hard", "has",
+    "have", "head", "hear", "help", "her", "high", "him", "his", "home", "hot",
+    "house", "idea", "into", "just", "keep", "kind", "know", "land", "last", "late",
+    "left", "less", "life", "like", "line", "list", "long", "look", "love", "made",
+    "main", "make", "man", "many", "may", "men", "mind", "more", "most", "move",
+    "much", "name", "near", "need", "new", "next", "nice", "night", "now", "off",
+    "old", "once", "one", "only", "open", "out", "over", "own", "page", "part",
+    "play", "put", "read", "real", "red", "rest", "road", "room", "run", "said",
+    "same", "say", "see", "set", "she", "ship", "show", "side", "sing", "sit",
+    "some", "soon", "stop", "sun", "take", "tell", "than", "that", "the", "them",
+    "then", "they", "this", "time", "top", "tree", "turn", "two", "under", "use",
+    "very", "walk", "want", "was", "water", "way", "well", "went", "what", "when",
+    "will", "wind", "with", "word", "work", "year", "you", "zero"
+];

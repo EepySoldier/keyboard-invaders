@@ -1,12 +1,13 @@
-﻿"use client"
-
-import { type ChangeEvent, useState, useEffect } from "react";
+import { type Dispatch, type SetStateAction, useEffect } from "react";
 
 const MAX = 5;
 
-export default function AttackField(){
-    const [word, setWord] = useState<string>("");
+type AttackFieldProps = {
+    word: string;
+    setWord: Dispatch<SetStateAction<string>>;
+}
 
+export default function AttackField({word, setWord}: AttackFieldProps){
     useEffect(() => {
         const onKeyDown = (e: KeyboardEvent): void => {
             if(e.ctrlKey || e.metaKey || e.altKey) {
@@ -16,12 +17,12 @@ export default function AttackField(){
             if(e.key === 'Backspace') {
                 setWord(prev => prev.slice(0, -1))
             } else if(/^[a-z]$/i.test(e.key)) {
-                setWord(prev => prev.length < MAX ? prev + e.key.toUpperCase() : prev);
+                setWord(prev => prev.length < MAX ? prev + e.key : prev);
             }
         }
         window.addEventListener("keydown", onKeyDown);
         return () => window.removeEventListener("keydown", onKeyDown);
-    }, []);
+    }, [setWord]);
 
     return (
         <div>

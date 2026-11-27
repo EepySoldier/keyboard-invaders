@@ -1,9 +1,4 @@
-import { getRandomWord } from "@/lib/utils";
-import { useState } from "react";
-
-export default function Enemy() {
-  const [word] = useState<string>(getRandomWord);
-
+export default function Enemy({word}: {word: string}) {
   return (
     <div>
       {[...word].map((letter, index) => (
